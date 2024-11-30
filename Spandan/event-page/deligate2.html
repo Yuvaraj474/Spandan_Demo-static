@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="deligate2.css">
+    <script src="event.js" defer></script>
+</head>
+
+
+
+
+<body>
+    <!-- Delegate Registration Form Container -->
+    <div class="container">
+        <!-- Form Part 1: Delegate Type -->
+        <div class="form-container" id="form-part-1">
+            <h2>Select Delegate Type</h2>
+            <form id="delegate-type-form">
+                <label for="delegate-type">Delegate Type</label>
+                <select id="delegate-type" name="delegate-type" required>
+                    <option value="">Select delegate type</option>
+                    <option value="400">Nereid Tier (₹400)</option>
+                    <option value="850">Orion Tier (₹850)</option>
+                    <option value="1000">Poseidon Tier (₹1000)</option>
+                    <option value="250">Wild Card Entry (₹250)</option>
+                </select>
+                <button type="button" onclick="showNextForm('form-part-2')">Next</button>
+            </form>
+        </div>
+
+        <!-- Form Part 2: Personal Information -->
+        <div class="form-container hidden" id="form-part-2">
+            <h2>Personal Information</h2>
+            <form id="personal-info-form">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required pattern="[A-Za-z\s]+">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="college-name">College Name</label>
+                <input type="text" id="college-name" name="college-name" placeholder="Enter your college name" required>
+
+                <label for="roll-number">College Roll Number</label>
+                <input type="text" id="roll-number" name="roll-number" placeholder="Enter your college roll number">
+
+                <label for="course">Course</label>
+                <input type="text" id="course" name="course" placeholder="Enter your course name" required>
+
+                <label for="college-year">College Year</label>
+                <input type="text" id="college-year" name="college-year" placeholder="Enter your college year" required>
+
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+                
+                <button type="button" onclick="showNextForm('form-part-3')">Next</button>
+            </form>
+        </div>
+
+        <!-- Form Part 3: Image Upload and Payment -->
+        <div class="form-container hidden" id="form-part-3">
+            <h2>Complete Your Registration</h2>
+            <form id="payment-form" action="#" method="post" enctype="multipart/form-data">
+                <label for="image-upload">Upload Your Image</label>
+                <input type="file" id="image-upload" name="image-upload" accept="image/*" required>
+
+                <label for="qr-code">Scan QR to Pay</label>
+                <div id="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=Default" alt="QR Code for Payment" id="qr-code">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+            <!-- Description Section -->
+            <div class="description">
+                <h2>Description</h2>
+                <ul>
+                    <li><b>Nereid Tier ₹ 400:</b> Access to inaugural night, competitive events (excludes Fashion Show).</li>
+                    <li><b>Orion Tier ₹ 850:</b> Access to Fashion Show, The Yellow Diary band performance.</li>
+                    <li><b>Poseidon Tier ₹ 1000:</b> Access to all competitive events, performances by The Yellow Diary, Thaikkudam Bridge, and Chinmayi Sripada Pro Shows.</li>
+                    <li><b>Wild Card Entry ₹ 250:</b> Participate in all competitive events (no main stage access).</li>
+                </ul>
+            </div>
+
+
+
+
+    <script>
+        function showNextForm(formId) {
+            document.querySelectorAll('.form-container').forEach(form => {
+                form.classList.add('hidden');
+            });
+            document.getElementById(formId).classList.remove('hidden');
+        }
+
+        document.getElementById("delegate-type").addEventListener("change", function () {
+            const delegateType = document.getElementById("delegate-type").value;
+            const username = document.getElementById("username").value || "default_user";
+            const email = document.getElementById("email").value || "default@example.com";
+            const mobile = document.getElementById("mobile").value || "0000000000";
+
+            if (delegateType) {
+                const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=Payment%20Details%0AName:%20${encodeURIComponent(username)}%0AEmail:%20${encodeURIComponent(email)}%0AMobile:%20${encodeURIComponent(mobile)}%0AAmount:%20₹${delegateType}`;
+                document.getElementById("qr-code").src = qrCodeUrl;
+            }
+        });
+    </script>
+</body>
+        
+</html>
+

@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1B3A48;  /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align content vertically */
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: black;
+    color: #fff;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Dropdown styles */
+header nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 0.5px;
+}
+
+header nav ul li .dropdown-content li {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li .dropdown-content li a {
+    padding: 12px 16px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li .dropdown-content li a:hover {
+    background-color: #555;
+}
+
+/* Submenu styles */
+header nav ul li .dropdown-content li.submenu:hover .dropdown-content-right {
+    display: block;
+}
+
+header nav ul li .dropdown-content-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #444;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+header nav ul li .dropdown-content-right li a {
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li .dropdown-content-right li a:hover {
+    background-color: #555;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.cart {
+    display: inline-block;
+    position: relative;
+}
+
+.cart img {    width: 24px;
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    width: 100%;
+    padding: 50px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Glassmorphism effect for form container */
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 300px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Form Elements Styling */
+form {
+    display: flex;
+    flex-direction: column;  /* Ensures vertical alignment of form elements */
+    align-items: stretch;    /* Makes inputs stretch to fill container */
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* Label text in white */
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* QR Code Container */
+#qr-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+.description h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #999;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* Ensure footer spans the full width */
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+

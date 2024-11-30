@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="deligate3.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Form Part 1: College Information -->
+        <div class="form-container" id="form-part-1">
+            <h2>College Information</h2>
+            <form id="college-info-form">
+                <label for="college-name">College Name</label>
+                <input type="text" id="college-name" name="college-name" placeholder="Enter your college name" required>
+
+                <label for="college-location">College Location</label>
+                <input type="text" id="college-location" name="college-location" placeholder="Enter your college location" required>
+
+                <label for="spoc-name">SPOC Name</label>
+                <input type="text" id="spoc-name" name="spoc-name" placeholder="Enter SPOC name" required>
+
+                <label for="spoc-email">SPOC Email</label>
+                <input type="email" id="spoc-email" name="spoc-email" placeholder="Enter SPOC email" required>
+
+                <label for="spoc-contact">SPOC Contact</label>
+                <input type="tel" id="spoc-contact" name="spoc-contact" placeholder="Enter SPOC contact" required pattern="[0-9]{10}">
+
+                <button type="button" onclick="showNextForm('form-part-2')">Next</button>
+            </form>
+        </div>
+
+        <!-- Form Part 2: Delegate Information -->
+        <div class="form-container hidden" id="form-part-2">
+            <h2>Delegate Information</h2>
+
+            <div class="tier-description">
+                <h3>Description</h3>
+                <p><strong>Nereid Tier ₹ 400:</strong> Access to inaugural night, competitive events (excludes Fashion Show).</p><br>
+                <p><strong>Orion Tier ₹ 850:</strong> Access to Fashion Show, The Yellow Diary band performance.</p><br>
+                <p><strong>Poseidon Tier ₹ 1000:</strong> Access to all competitive events, performances by The Yellow Diary, Thaikkudam Bridge, and Chinmayi Sripada Pro Shows.</p><br>
+            </div>
+
+            <label for="delegate-tier">Delegate Tier</label>
+            <select id="delegate-tier" name="delegate-tier" required>
+                <option value="">Select delegate tier</option>
+                <option value="400">Nereid Tier (₹400)</option>
+                <option value="850">Orion Tier (₹850)</option>
+                <option value="1000">Poseidon Tier (₹1000)</option>
+            </select>
+            <br>
+
+            <label for="delegate-count">Number of Delegates</label>
+            <input type="number" id="delegate-count" name="delegate-count" min="1" max="100" value="1" required>
+
+            <div id="delegate-details"></div>
+
+            <div id="delegate-buttons">
+                <button id="add-delegate-btn" type="button" onclick="generateDelegateFields()">Add Delegates</button>
+                <button id="next-btn" type="button" onclick="showNextForm('form-part-3')">Next</button>
+            </div>
+            
+        </div>
+
+        <!-- Form Part 3: Payment Information -->
+        <div class="form-container hidden" id="form-part-3">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <label for="transaction-id">Transaction ID</label>
+                <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter Transaction ID" required>
+
+                <label for="image-upload">Upload Payment Proof</label>
+                <input type="file" id="image-upload" name="image-upload" accept="image/*" required>
+
+                <label for="qr-code">Scan QR to Pay</label>
+                <div id="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=Payment%20Details" alt="QR Code" id="qr-code">
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

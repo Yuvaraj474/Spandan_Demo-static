@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="event.css">
+    <script src="event.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Delegate Card</a></li>
+                <li class="dropdown">
+                    <a href="#">Events <span>&#9662;</span></a>
+                    <ul class="dropdown-content">
+                        <li class="submenu">
+                            <a href="#">Les Beaux Arts (Fine Arts & Culturals) &#9656;</a>
+                            <ul class="dropdown-content-right">
+                                <li><a href="#">Dance</a></li>
+                                <li><a href="#">Music</a></li>
+                                <li><a href="#">Dramatics (Vaudeville)</a></li>
+                                <li><a href="#">Dernier Cri (Fashion Show)</a></li>
+                                <li><a href="#">Fine Arts (Motif)</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Les Jeux (Sports) &#9656;</a>
+                            <ul class="dropdown-content-right">
+                                <li><a href="#">Aquatics</a></li>
+                                <li><a href="#">Atheletics</a></li>
+                                <li><a href="#">Batminton</a></li>
+                                <li><a href="#">Basketball</a></li>
+                                <li><a href="#">Carrom</a></li>
+                                <li><a href="#">Chess</a></li>
+                                <li><a href="#">Cricket</a></li>
+                                <li><a href="#">Football</a></li>
+                                <li><a href="#">Futsal</a></li>
+                                <li><a href="#">Hockey</a></li>
+                                <li><a href="#">Table Tennis</a></li>
+                                <li><a href="#">Tennis</a></li>
+                                <li><a href="#">Throwball</a></li>
+                                <li><a href="#">Volleyball</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Les Litteraires (Literary & Debating) &#9656;</a>
+                            <ul class="dropdown-content-right">
+                                <li><a href="#">Major Events</a></li>
+                                <li class="submenu">
+                                    <a href="#">Minor Events<span>&#9656;</span></a>
+                                    <ul class="dropdown-content-right">
+                                        <li><a href="#">Lexicon</a></li>
+                                        <li><a href="#">Loquacity</a></li>
+                                        <li><a href="#">Trivium</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Online Events</a></li>
+                                
+                                
+                            </ul>
+                        </li>
+                        <li><a href="#">Les Informals</a></li>
+                        <li class="submenu">
+                            <a href="#">Planet Arcadia (Gaming)<span>&#9656;</span></a>
+                            <ul class="dropdown-content-right">
+                                <li><a href="#">Exclusive Playzone</a></li>
+                                <li><a href="#">Mobile Competitive Titles</a></li>
+                                <li><a href="#">PC Competitive Titles (Offline) </a></li>
+                                <li><a href="#">PC Competitive Titles (Online)</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="#">La Lutte (Intercollegiate Medical Quiz)</a></li>
+                        <li><a href="#">La Fete Du Cinema (Short Film Fest)</a></li>
+                        <li><a href="#">Le Concours Photo (Photography)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Food <span>&#9662;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Mega Combo Offers</a></li>
+                        <li><a href="#">Mini Combo Offers</a></li>
+                        <li><a href="#">Breakfast</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Dinner</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accommodation</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="#">Schedule</a>
+            <a href="#">Account</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            
+            <div class="cart">
+                <a href="#">₹1,000.00</a>
+                <img src="cart-icon.png" alt="Cart">
+                <span>1</span>
+            </div>
+        </div>
+    </header>
+       
+    <!-- Main Content Section -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search" onkeyup="filterCategories()">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+            <ul id="category-list" class="categories">
+                <li><a href="uncategorized.html">Uncategorized (1)</a></li>
+                <li><a href="../deligate/deligate.html">Delegate Card (1)</a></li>
+                <li><a href="food.html">Food (8)</a></li>
+                <li><a href="la-fete-du-cinema.html">La Fete Du Cinema (1)</a></li>
+                <li><a href="la-lutte.html">La Lutte (2)</a></li>
+                <li><a href="le-concours-photo.html">Le Concours Photo (4)</a></li>
+                <li><a href="les-beaux-arts.html">Les Beaux Arts (Fine Arts & Culturals) (26)</a></li>
+                <ul class="subcategories">
+                    <li><a href="dance.html">Dance (7)</a></li>
+                    <li><a href="dernier-cri.html">Dernier Cri (Fashion Show) (1)</a></li>
+                    <li><a href="dramatics.html">Dramatics (Vaudeville) (5)</a></li>
+                    <li><a href="fine-arts.html">Fine Arts (Motif) (9)</a></li>
+                    <li><a href="music.html">Music(4)</a></li>
+                </ul>
+                <li><a href="les-informals.html">Les Informals(6)</a></li>
+                <li><a href="les-jeux.html">Les Jeux (46)</a></li>
+                <ul class="subcategories">
+                    <li><a href="aquatics.html">Aquatics (4)</a></li>
+                    <li><a href="atheletics.html">Atheletics (18)</a></li>
+                    <li><a href="batminton.html">Batminton (3)</a></li>
+                    <li><a href="basketball.html">Basketball (2)</a></li>
+                    <li><a href="carrom.html">Carrom(2)</a></li>
+                    <li><a href="chess.html">Chess(2)</a></li>
+                    <li><a href="cricket.html">Cricket(1)</a></li>
+                    <li><a href="football.html">Football(1)</a></li>
+                    <li><a href="futsall.html">Futsal(2)</a></li>
+                    <li><a href="hockey.html">Hockey(1)</a></li>
+                    <li><a href="tabletennis.html">Table-Tennis(4)</a></li>
+                    <li><a href="throwball.html">Throwball(1)</a></li>
+                    <li><a href="volleyball.html">Volleyball(2)</a></li>
+                </ul>
+                <li><a href="les-litteraires.html">Les Litteraires (Literary & Debating) (13)</a></li>
+                <ul class="subcategories">
+                    <li><a href="majorevent.html">Major Events(3)</a></li>
+                    <li><a href="minorevent.html">Minor Events(8)</a></li>
+                    <ul class="subcategories">
+                        <li><a href="lexicon.html">Lexicon(3)</a></li>
+                        <li><a href="loquacity.html">Loquacity (3)</a></li>
+                        <li><a href="trivium.html">Trivium (2)</a></li>
+                    </ul>
+                    <li><a href="onlineevent.html">Online Events(2)</a></li>
+                    <ul class="subcategories">
+                        <li><a href="kaleidoscope.html">Kaleidoscope(2)</a></li>
+                    </ul>      
+                </ul>
+                <li><a href="onlineevent.html">Planet Arcadia(15)</a></li>
+                <ul class="subcategories">
+                    <li><a href="playzone.html">Exclusive Playzone (5)</a></li>
+                    <li><a href="mobilecomp.html">Mobile Competitive Titles (5)</a></li>
+                    <li><a href="pcoffline.html">PC Competitive Titles (Offline) (2)</a></li>
+                    <li><a href="pconline.html">PC Competitive Titles (Online) (3)</a></li>
+                </ul>    
+                
+
+                  
+
+
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="content">
+            <h2>Dance</h2>
+            <p>Showing all 7 results</p>
+            <div class="event-grid">
+                <div class="event-item">
+                  <a href="adaptunes-details.html"><img src="image1.jpg" alt="Adaptunes"></a>   
+                    <p class="category">Dance</p>
+                    <h3>Adaptunes</h3>
+                    <p>₹200.00</p>  
+                 
+                </div>
+                <div class="event-item">
+                    <a href="duetdance1.html"><img src="image2.jpg" alt="Duet Dance – Classical/Folk"></a>
+                    <p class="category">Dance</p>
+                    <h3>Duet Dance – Classical/Folk</h3>
+                    <p>₹200.00</p>
+                </div>
+                <div class="event-item">
+                    <a href="duetdance2.html"><img src="image3.jpg" alt="Duet Dance – Western"></a>
+                    <p class="category">Dance</p>
+                    <h3>Duet Dance – Western</h3>
+                    <p>₹200.00</p>
+                </div>
+                <div class="event-item">
+                    <a href="groupdance1.html"><img src="image4.jpg" alt="Group Dance – Non Theme"></a>
+                    <p class="category">Dance</p>
+                    <h3>Group Dance – Non Theme</h3>
+                    <p>₹250.00</p>
+                </div>
+                <div class="event-item">
+                    <a href="groupdance2.html"><img src="image5.jpg" alt="Group Dance – Theme"></a>
+                    <p class="category">Dance</p>
+                    <h3>Group Dance – Theme</h3>
+                    <p>₹250.00</p>
+                </div>
+                <div class="event-item">
+                    <a href="showdown.html"><img src="image6.jpg" alt="Showdown Dance Battle"></a>
+                    <p class="category">Dance</p>
+                    <h3>Showdown (Dance Battle)</h3>
+                    <p>₹200.00</p>
+                </div>
+                <div class="event-item">
+                    <a href="solodance.html"><img src="image7.jpg" alt="Solo Dance"></a>
+                    <p class="category">Dance</p>
+                    <h3>Solo Dance</h3>
+                    <p>₹200.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Delegate Event. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p>Contact: info@delegateevent.com | Phone: +91 12345 67890</p>
+    
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms & Conditions</a> |
+                    <span>Made by <a href="#">Webinfinity</a></span>
+                </div>
+            </div>
+        </footer>
+
+    
+                </div>
+            </div>
+        </div>

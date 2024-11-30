@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <!-- Les Beaux Arts -->
+        <div class="event-category-box">
+            <div class="event-category-header" onclick="toggleCategory('category1')">
+                <h3 class="event-category-title">Les Beaux Arts (Fine Arts & Culturals)</h3>
+                <span class="toggle-arrow" id="arrow-category1">▼</span>
+            </div>
+
+            <div class="event-category-content" id="category1">
+                
+                
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Dance</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Solo Eastern</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Solo Western</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Adaptunes</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Duet Eastern</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Duet Western</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Group Dance</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Theme</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Non Theme Eastern</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Non Theme Western</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Dance Battle</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Music</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Solo Singing (Eastern)</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Solo Singing (Western)</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Solo Instrumentals</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Band</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Indian</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Western</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Western Acoustics</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Vaudeville (Dramatics Events)</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Play</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Skit</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Mime</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Adzap</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Variety</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Dernier Cri</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <!-- <span class="event-name">Event Name</span> -->
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Fine Arts Events</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Painting</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Sketching</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Makeup</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">T shirt Painting</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Pot painting</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Face Painting</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Mehendi</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Collage</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">Origami</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                        <div class="event-item">
+                            <span class="event-name">All events combo</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="event-subcategory">
+                    <h4 class="subcategory-title">Online Events</h4>
+                    <div class="event-grid">
+                        <div class="event-item">
+                            <span class="event-name">Digital Art</span>
+                            <button class="download-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- House Informals -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category2')">
+                    <h3 class="event-category-title">House Informals</h3>
+                    <span class="toggle-arrow" id="arrow-category2">▼</span>
+                </div>
+
+                <div class="event-category-content" id='category2'>
+                    <div class="event-subcategory">
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Treasure Hunt</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Paintball</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Beg Borrow Steal</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Squid Game</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Slow Cycling</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Double Trouble</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Snakes and Ladders</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Eatathon</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Whodunnit</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Beg Borrom Steal</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <!-- <div class="event-item">
+                                <span class="event-name">Event 6</span>
+                                <button class="download-btn">Download</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Les Jeux -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category3')">
+                    <h3 class="event-category-title">Les Jeux</h3>
+                    <span class="toggle-arrow" id="arrow-category3">▼</span>
+                </div>
+
+                <div class="event-category-content" id="category3">
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Aquatics (Men's)</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Freestyle 100m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Freestyle 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Backstroke 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Breakstroke 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Butterfly 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Relay 4*50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Aquatics (Women's)</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Freestyle 100m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Freestyle 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Freestyle 25m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Backstroke 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Breakstroke 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Butterfly 50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Relay 4*50m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Atheletics (Men's)</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">100m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">200m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">400m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">800m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">1500m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Shotput</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Discus Throw</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Long jump</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">4*100m Relay</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Atheletics (Women's)</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">100m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">200m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">400m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">800m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">1500m</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Shotput</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Discus Throw</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Long jump</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">4*100m Relay</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Badminton</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Men's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Mixed doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Basketball</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Carrom</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Chess</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Rapid</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Blitz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Team</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Cricket</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Football</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Futsal</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Hockey</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Table Tennis</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Men's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Tennis</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Men's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's singles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's doubles</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                        
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Throwball</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Women's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Volleyball</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Men's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Women's</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Les Litteraires -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category4')">
+                    <h3 class="event-category-title">Les Litteraires</h3>
+                    <span class="toggle-arrow" id="arrow-category4">▼</span>
+                </div>
+
+                <div class="event-category-content" id="category4">
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Major Events</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Formal Debate</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Not-a-mediquiz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">General Quiz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Online Events</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Flash Fiction</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Creative Writing</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Poetry Writing</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">6 Word Story</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <br>
+
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Minor Events</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Sports Quiz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Fandom Quiz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">JAM</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Turncoat</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Shipwreck</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Dumb Charades</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Potpourri</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Cryptic Crossword</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Scrabble</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Malarkey (informal debate)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- LE CONCOURS PHOTO -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category5')">
+                    <h3 class="event-category-title">Le Concours Photo</h3>
+                    <span class="toggle-arrow" id="arrow-category5">▼</span>
+                </div>
+
+                <div class="event-category-content" id="category5">
+                    <div class="event-subcategory">
+                        <h4 class="subcategory-title">Photography Events</h4>
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">Still Breathing(Online)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Mime the meme(Online)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Natural history of college life(Online)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Offline</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Reel Hunt</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Short film</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- La Lutte -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category6')">
+                    <h3 class="event-category-title">La Lutte</h3>
+                    <span class="toggle-arrow" id="arrow-category6">▼</span>
+                </div>
+
+                <div class="event-category-content" id="category6">
+                    <div class="event-subcategory">
+                        <div class="event-grid">
+                            <div class="event-item">
+                                    <span class="event-name">Junior Mediquiz</span>
+                                    <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Senior Mediquiz</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Mystic Reel Hunt (Online)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Phantom Frames (Online)</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming -->
+            <div class="event-category-box">
+                <div class="event-category-header" onclick="toggleCategory('category7')">
+                    <h3 class="event-category-title">Gaming</h3>
+                    <span class="toggle-arrow" id="arrow-category7">▼</span>
+                </div>
+
+                <div class="event-category-content" id="category7">
+                    <div class="event-subcategory">
+                        <div class="event-grid">
+                            <div class="event-item">
+                                <span class="event-name">COD</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">BGMI</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Clash Royale</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">FIFA Mobile</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                            <div class="event-item">
+                                <span class="event-name">Brawlhalla</span>
+                                <button class="download-btn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
